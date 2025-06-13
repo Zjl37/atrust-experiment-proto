@@ -1,0 +1,20 @@
+[project]
+name = "atrust-experiment-proto"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=45.0.4",
+    "idshit",
+    "requests>=2.32.4",
+]
+
+[tool.uv.sources]
+idshit = { git = "https://github.com/Zjl37/idshit.py" }
+
+[dependency-groups]
+dev = [
+    "pillow>=11.2.1",
+    "rich>=14.0.0",
+]
